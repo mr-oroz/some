@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f6fa;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+      padding: 15px;
+      width: 500px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      margin: 0;
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 0;
+    }
+    img {
+      height: 50px;
+    }
+    .total {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>Shoping Cart</h3>
+    <div class="wrapper">
+      <div class="product">
+        <img src="https://www.pngplay.com/wp-content/uploads/9/Coca-Cola-Transparent-Background.png" alt="">
+        <div class="product-name">
+          <h2>Apple Juise</h2>
+        </div>
+        <div class="btn">
+          <button>+</button>
+          <span>2</span>
+          <button>-</button>
+        </div>
+        <div class="price">
+          <span>$2</span>
+          <button>remove</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://www.pngplay.com/wp-content/uploads/9/Coca-Cola-Transparent-Background.png" alt="">
+        <div class="product-name">
+          <h2>Grapes Juise</h2>
+        </div>
+        <div class="btn">
+          <button>+</button>
+          <span>1</span>
+          <button>-</button>
+        </div>
+        <div class="price">
+          <span>$3</span>
+          <button>remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <span>$5</span>
+      <button>Checkout</button>
+    </div>
+  </div>
+</body>
+</html>
